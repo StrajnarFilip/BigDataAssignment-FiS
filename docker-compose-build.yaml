@@ -1,0 +1,6 @@
+services:
+  hadoop:
+    build: .
+    volumes:
+      - "./output:/hadoop-output"
+      - "./input:/hadoop-input"
