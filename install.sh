@@ -1,3 +1,4 @@
+#!/bin/bash
 # Unnecessary because of WORKDIR /hadoop
 cd /hadoop
 # Update apt repositories
