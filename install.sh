@@ -17,12 +17,12 @@ rm hadoop-3.3.5.tar.gz
 # Adjust PATH environmental variable to include hadoop bins
 export PATH="$PATH:/hadoop/hadoop-3.3.5/bin"
 # Edit .bashrc to do the same (in case of interactive session)
-echo 'export PATH="$PATH:/hadoop/hadoop-3.3.5/bin"' > /root/.bashrc
-echo 'export PATH="$PATH:/hadoop/hadoop-3.3.5/bin"' > /etc/profile
+echo 'export PATH="$PATH:/hadoop/hadoop-3.3.5/bin"' >> /root/.bashrc
+echo 'export PATH="$PATH:/hadoop/hadoop-3.3.5/bin"' >> /etc/profile
 # Same for JAVA_HOME
 export JAVA_HOME="/usr/lib/jvm/java-8-openjdk-amd64"
-echo 'export JAVA_HOME="/usr/lib/jvm/java-8-openjdk-amd64"' > /root/.bashrc
-echo 'export JAVA_HOME="/usr/lib/jvm/java-8-openjdk-amd64"' > /etc/profile
+echo 'export JAVA_HOME="/usr/lib/jvm/java-8-openjdk-amd64"' >> /root/.bashrc
+echo 'export JAVA_HOME="/usr/lib/jvm/java-8-openjdk-amd64"' >> /etc/profile
 
 # Clone official Apache Hadoop repository from GitHub
 # Limiting depth to 1 commit
