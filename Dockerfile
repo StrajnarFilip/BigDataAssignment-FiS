@@ -6,4 +6,4 @@ WORKDIR /hadoop
 COPY . .
 # Execute install shell script
 RUN [ "/bin/bash", "install.sh"]
-CMD [ "hadoop", "jar", "/hadoop/hadoop-mapreduce-examples-3.4.0-SNAPSHOT.jar", "wordcount", "/hadoop-input", "/hadoop-output" ]
+CMD [ "hadoop", "jar", "/hadoop/hadoop-mapreduce-examples-3.4.0-SNAPSHOT.jar", "wordcount", "/hadoop-input/input.txt", "/hadoop-output/out" ]
