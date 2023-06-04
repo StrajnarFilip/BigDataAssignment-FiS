@@ -4,3 +4,9 @@ services:
     volumes:
       - "./output:/hadoop-output"
       - "./input:/hadoop-input"
+    environment:
+      # https://hadoop.apache.org/docs/current/hadoop-project-dist/hadoop-common/CommandsManual.html#jar
+      HADOOP_JAR_PATH: "/hadoop/hadoop-mapreduce-examples-3.4.0-SNAPSHOT.jar"
+      HADOOP_MAINCLASS: "wordcount"
+      HADOOP_INPUT: "/hadoop-input/input.txt"
+      HADOOP_OUTPUT: "/hadoop-output/out"
