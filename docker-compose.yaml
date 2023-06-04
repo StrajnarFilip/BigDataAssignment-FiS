@@ -1,6 +1,6 @@
 services:
   hadoop:
-    image: 988977i/fis-hadoop:two
+    image: "988977i/fis-hadoop:stable"
     volumes:
       - "./output:/hadoop-output"
       - "./input:/hadoop-input"
