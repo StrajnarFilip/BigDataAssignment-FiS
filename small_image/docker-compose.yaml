@@ -1,0 +1,12 @@
+services:
+  hadoop:
+    image: "988977i/fis-hadoop:compact"
+    volumes:
+      - "./output:/hadoop-output"
+      - "./input:/hadoop-input"
+    environment:
+      # https://hadoop.apache.org/docs/current/hadoop-project-dist/hadoop-common/CommandsManual.html#jar
+      HADOOP_JAR_PATH: "/hadoop/mapreduce-examples.jar"
+      HADOOP_MAINCLASS: "wordcount"
+      HADOOP_INPUT: "/hadoop-input/input.txt"
+      HADOOP_OUTPUT: "/hadoop-output/out"
